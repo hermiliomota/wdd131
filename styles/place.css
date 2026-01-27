@@ -36,13 +36,6 @@ header {
   display: block;
 }
 
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .content {
   display: grid;
   gap: 1rem;
@@ -67,13 +60,11 @@ header {
   margin: 0.5rem 0;
 }
 
-/* Large View */
 @media (min-width: 768px) {
   .content {
     grid-template-columns: 2fr 1fr;
   }
-
-  /* Pseudo-element weather icon */
+  
   .weather h2::after {
     content: " ⛅";
   }

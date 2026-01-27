@@ -1,12 +1,9 @@
-// Footer dates
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Static weather values
-const temperature = 8; // °C
-const windSpeed = 15; // km/h
+const temperature = 8; 
+const windSpeed = 15; 
 
-// Wind chill calculation (Metric)
 function calculateWindChill(temp, wind) {
   return (
     13.12 +
@@ -16,7 +13,6 @@ function calculateWindChill(temp, wind) {
   ).toFixed(1);
 }
 
-// Conditions check
 let windChill = "N/A";
 
 if (temperature <= 10 && windSpeed > 4.8) {
