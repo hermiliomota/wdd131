@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portugal | Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Portugal</h1>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 900px)">
+      <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+      <img src="images/hero-small.webp" alt="Portugal Coastline">
+    </picture>
+  </section>
+
+  <!-- Content Grid -->
+  <section class="content">
+    <article class="about">
+      <h2>About Portugal</h2>
+      <p>
+        Portugal is a country located in southwestern Europe, known for its rich
+        maritime history, beautiful beaches, historic cities, and unique
+        cuisine. Lisbon and Porto are world-famous destinations, along with the
+        Algarve region and its dramatic coastal cliffs.
+      </p>
+    </article>
+
+    <article class="weather">
+      <h2>Weather</h2>
+
+      <!-- Mobile SVG Icon -->
+      <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy">
+
+      <ul>
+        <li>Temperature: <span id="temp">12</span> °C</li>
+        <li>Wind Speed: <span id="wind">15</span> km/h</li>
+        <li>Wind Chill: <span id="windchill">--</span></li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> | Portugal |
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+
+</body>
+</html>
