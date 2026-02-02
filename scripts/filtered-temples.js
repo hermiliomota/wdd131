@@ -103,11 +103,9 @@ function displayTemples(list) {
 
 displayTemples(temples);
 
-// Footer
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Menu
 const menuButton = document.getElementById("menuButton");
 const navMenu = document.getElementById("navMenu");
 
@@ -116,7 +114,6 @@ menuButton.addEventListener("click", () => {
   menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
 });
 
-// Filters
 document.getElementById("home").addEventListener("click", () => displayTemples(temples));
 document.getElementById("old").addEventListener("click", () =>
   displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900))

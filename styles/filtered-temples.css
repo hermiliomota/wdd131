@@ -116,7 +116,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive */
 @media (min-width: 768px) {
   #menuButton {
     display: none;
