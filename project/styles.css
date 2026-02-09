@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F4F7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #1F3A5F;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat, sans-serif;
+    color: #1F3A5F;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.primary {
+    background-color: #1F3A5F;
+}
+
+.secondary {
+    background-color: #F2F4F7;
+    border: 1px solid #ccc;
+}
+
+.wireframe {
+    background-color: #eee;
+    padding: 1rem;
+    font-family: monospace;
+    overflow-x: auto;
+}
