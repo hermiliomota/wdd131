@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hermilio dos Santos Mota">
+    <meta name="description" content="Submit your product review including rating, features, installation date, and written feedback.">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,11 +23,16 @@
 
             <fieldset>
                 <legend>Overall Rating:</legend>
-                <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
-                <label><input type="radio" name="rating" value="2"> 2 ☆</label>
-                <label><input type="radio" name="rating" value="3"> 3 ☆</label>
-                <label><input type="radio" name="rating" value="4"> 4 ☆</label>
-                <label><input type="radio" name="rating" value="5"> 5 ☆</label>
+                <input type="radio" id="rating1" name="rating" value="1" required> 
+                <label for="rating1">1 ☆</label> 
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2 ☆</label> 
+                <input type="radio" id="rating3" name="rating" value="3"> 
+                <label for="rating3">3 ☆</label> 
+                <input type="radio" id="rating4" name="rating" value="4"> 
+                <label for="rating4">4 ☆</label> 
+                <input type="radio" id="rating5" name="rating" value="5"> 
+                <label for="rating5">5 ☆</label> 
             </fieldset>
 
             <label for="installDate">Date of Installation:</label>
@@ -33,10 +40,14 @@
 
             <fieldset>
                 <legend>Useful Features:</legend>
-                <label><input type="checkbox" name="features" value="Durability"> Durability </label>
-                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use </label>
-                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="Design"> Design</label>
+                <input type="checkbox" id="feature1" name="features" value="Durability">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" name="features" value="Ease of Use">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" name="features" value="Performance">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" name="features" value="Design">
+                <label for="feature4">Design</label>
             </fieldset>
 
             <label for="review">Written Review:</label>
@@ -53,6 +64,6 @@
         <p>&copy; 2026 Hermilio dos Santos Mota. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    
 </body>
 </html>

@@ -102,3 +102,35 @@ footer {
 footer span {
     color: #ff69b4;
 }
+
+@media (max-width: 768px) {
+    form {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        padding: 0.8rem;
+        max-width: 95%;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select,
+    input[type="submit"] {
+        width: 100%;
+        font-size: 0,95rem;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
