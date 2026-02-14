@@ -1,0 +1,127 @@
+:root {
+  --primary: #1F3A5F;
+  --secondary: #F2F4F7;
+  --accent: #4A90E2;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary);
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-left: 5px solid var(--accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+input, textarea, select {
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: normal; 
+}
+
+footer a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
+.disclaimer {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 1rem left;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
